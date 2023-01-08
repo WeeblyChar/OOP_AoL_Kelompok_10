@@ -17,6 +17,7 @@ public class Length {
 	public Length(String measurement) {
 		super();
 		this.measurement = measurement;
+		this.factor = 1;
 	}
 
 	public String getMeasurement() {
@@ -28,34 +29,34 @@ public class Length {
 	}
 
 	public double getFactor() {
-		return factor;
-	}
-
-	public double optionCheck() {
 		String measurement = this.measurement;
-		if (measurement.equalsIgnoreCase("inch")) {
+		if (measurement.equalsIgnoreCase("Inch")) {
 			factor = INCH_TO_METER;
 			return factor;
-		} else if (measurement.equalsIgnoreCase("foot")) {
+		} else if (measurement.equalsIgnoreCase("Foot")) {
 			factor = FOOT_TO_METER;
 			return factor;
-		} else if (measurement.equalsIgnoreCase("mile")) {
+		} else if (measurement.equalsIgnoreCase("Mile")) {
 			factor = MILE_TO_METER;
 			return factor;
-		} else if (measurement.equalsIgnoreCase("yard")) {
+		} else if (measurement.equalsIgnoreCase("Yard")) {
 			factor = YARD_TO_METER;
 			return factor;
-		} else if (measurement.equalsIgnoreCase("milimeter")) {
+		} else if (measurement.equalsIgnoreCase("Milimeter")) {
 			factor = MM_TO_METER;
 			return factor;
-		} else if (measurement.equalsIgnoreCase("centimeter")) {
+		} else if (measurement.equalsIgnoreCase("Centimeter")) {
 			factor = CM_TO_METER;
 			return factor;
-		} else if (measurement.equalsIgnoreCase("kilometer")) {
+		} else if (measurement.equalsIgnoreCase("Kilometer")) {
 			factor = KM_TO_METER;
 			return factor;
 		}
 		return factor;
+	}
+
+	public void setFactor(double factor) {
+		this.factor = factor;
 	}
 
 	public double toMeter(double x) {

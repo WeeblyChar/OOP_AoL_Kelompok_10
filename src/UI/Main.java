@@ -13,19 +13,22 @@ public class Main {
 	private JComboBox comboBox_1, comboBox_2;
 	private JFormattedTextField textField_1, textField_2;
 	private String option_1, option_2;
-	private double text_1, text_2;
+	private double text_1;
+	private String text_2;
 	private NumberFormat doubleFormat;
 	private JButton buttonCalculate;
+	private Length from, to;
 
 	Main create() {
 		frame = new JFrame("Length Measurement Converter");
-		String[] measurementList = { "Inch", "Foot", "Mile", "Yard", "Milimeter", "Centimeter", "Kilometer" };
+		String[] measurementList = { "Inch", "Foot", "Mile", "Yard", "Milimeter", "Centimeter", "Meter", "Kilometer" };
 
 		comboBox_1 = new JComboBox(measurementList);
 		comboBox_2 = new JComboBox(measurementList);
 
 		doubleFormat = NumberFormat.getNumberInstance();
 		doubleFormat.setMaximumFractionDigits(5);
+		doubleFormat.setMinimumIntegerDigits(0);
 
 		textField_1 = new JFormattedTextField(doubleFormat);
 		textField_1.setValue(0);
@@ -44,37 +47,50 @@ public class Main {
 				}
 			}
 		});
-
-		comboBox_1.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				option_1 = comboBox_1.getSelectedItem().toString();
-				Length from = new Length(option_1);
-			}
-		});
-
-		comboBox_2.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				option_2 = comboBox_2.getSelectedItem().toString();
-				Length to = new Length(option_2);
-			}
-		});
-
+		
 		buttonCalculate = new JButton("Calculate");
 
 		buttonCalculate.addActionListener(new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				text_1 = Double.parseDouble(textField_1.getText());
-
+				try {
+					
+					option_1 = comboBox_1.getSelectedItem().toString();
+					from = new Length(option_1);
+					
+					option_2 = comboBox_2.getSelectedItem().toString();
+					to = new Length(option_2);
+					
+					String temp = textField_1.getText();
+					temp = temp.replace(",", "");
+					text_1 = Double.parseDouble(temp);
+				} catch (Exception e) {
+					JOptionPane.showMessageDialog(frame, "TextField input Error!");
+				}
+				
 				if (option_1 == option_2)
 					textField_2.setValue(text_1);
 				else {
-					
+					try {
+						if(option_1.equalsIgnoreCase("Meter")) {
+							double factor = to.getFactor();
+							double temp = text_1 / factor;
+							textField_2.setValue(temp);
+						}else if(option_2.equalsIgnoreCase("Meter")) {
+							double factor = from.getFactor();
+							double temp = text_1 * factor;
+							textField_2.setValue(temp);
+						}else {
+							double factor = from.getFactor();
+							double temp = text_1 * factor;
+							factor = to.getFactor();
+							temp = temp / factor;
+							textField_2.setValue(temp);
+						}
+					} catch (Exception e) {
+						JOptionPane.showMessageDialog(frame, "Calculation Error!");
+					}
 				}
 
 			}
