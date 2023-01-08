@@ -108,10 +108,8 @@ public class Main {
 
 		wrapper_1.add(comboBox_1);
 		wrapper_1.add(textField_1);
-
 		wrapper_2.add(comboBox_2);
 		wrapper_2.add(textField_2);
-
 		wrapper_3.add(buttonCalculate);
 
 		panel.add(wrapper_1);
@@ -119,7 +117,6 @@ public class Main {
 		panel.add(wrapper_3);
 
 		frame.add(panel);
-
 		return this;
 	}
 
