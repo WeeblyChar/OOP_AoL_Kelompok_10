@@ -29,6 +29,7 @@ public class Main {
 		doubleFormat = NumberFormat.getNumberInstance();
 		doubleFormat.setMaximumFractionDigits(5);
 		doubleFormat.setMinimumIntegerDigits(0);
+		doubleFormat.setGroupingUsed(false);
 
 		textField_1 = new JFormattedTextField(doubleFormat);
 		textField_1.setValue(0);
