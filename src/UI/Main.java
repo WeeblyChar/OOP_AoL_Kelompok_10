@@ -48,7 +48,7 @@ public class Main {
 				}
 			}
 		});
-		
+
 		buttonCalculate = new JButton("Calculate");
 
 		buttonCalculate.addActionListener(new ActionListener() {
@@ -56,33 +56,33 @@ public class Main {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
 				try {
-					
+
 					option_1 = comboBox_1.getSelectedItem().toString();
 					from = new Length(option_1);
-					
+
 					option_2 = comboBox_2.getSelectedItem().toString();
 					to = new Length(option_2);
-					
+
 					String temp = textField_1.getText();
 					temp = temp.replace(",", "");
 					text_1 = Double.parseDouble(temp);
 				} catch (Exception e) {
 					JOptionPane.showMessageDialog(frame, "TextField input Error!");
 				}
-				
+
 				if (option_1 == option_2)
 					textField_2.setValue(text_1);
 				else {
 					try {
-						if(option_1.equalsIgnoreCase("Meter")) {
+						if (option_1.equalsIgnoreCase("Meter")) {
 							double factor = to.getFactor();
 							double temp = text_1 / factor;
 							textField_2.setValue(temp);
-						}else if(option_2.equalsIgnoreCase("Meter")) {
+						} else if (option_2.equalsIgnoreCase("Meter")) {
 							double factor = from.getFactor();
 							double temp = text_1 * factor;
 							textField_2.setValue(temp);
-						}else {
+						} else {
 							double factor = from.getFactor();
 							double temp = text_1 * factor;
 							factor = to.getFactor();
