@@ -24,12 +24,18 @@ public class Fahrenheit extends Temperature {
 
 	@Override
 	double getResult(Kelvin temperature) {
-		return 0;
+		double fah_to_kel = this.getTemperatureLevel();
+		fah_to_kel = (fah_to_kel + 459.67) / factor;
+		temperature.setTemperatureLevel(fah_to_kel);
+		return temperature.getTemperatureLevel();
 	}
 
 	@Override
 	double getResult(Reaumur temperature) {
-		return 0;
+		double fah_to_rea = this.getTemperatureLevel();
+		fah_to_rea = (fah_to_rea - 32) / (factor + 0.45);
+		temperature.setTemperatureLevel(fah_to_rea);
+		return temperature.getTemperatureLevel();
 	}
 
 }

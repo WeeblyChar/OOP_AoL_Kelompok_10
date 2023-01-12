@@ -1,8 +1,8 @@
 package Temperature;
 
 public class Celcius extends Temperature {
-	
-	final private double factor = 1.8; 
+
+	final private double factor = 1.8;
 
 	public Celcius(String temperature, double temperatureLevel) {
 		super(temperature, temperatureLevel);
