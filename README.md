@@ -10,9 +10,9 @@ Anggota Kelompok:
 
 Daftar satuan ukur yang terdapat pada aplikasi ini adalah:
 
-* Panjang = Inch, Foot, Mile, Yard, Milimeter, Centimeter, Meter, Kilometer
+* Panjang = Inch, Foot, Mile, Yard, Milimeter, Centimeter, Meter, dan Kilometer
 
-* Suhu = 
+* Suhu = Celcius, Fahrenheit, Kelvin, dan Reaumur
 
 Langkah-langkah penggunaan aplikasi :
 1. Pilih satuan awal yang ingin diubah.
