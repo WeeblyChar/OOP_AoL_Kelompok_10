@@ -4,35 +4,15 @@ public class Celcius extends Temperature {
 
 	final private double factor = 1.8;
 
-	public Celcius(String temperature, double temperatureLevel) {
-		super(temperature, temperatureLevel);
+	public Celcius(double temperatureLevel) {
+		super(temperatureLevel);
 	}
 
 	@Override
-	double getResult(Celcius temperature) {
-		temperature.setTemperatureLevel(this.getTemperatureLevel());
+	public double getResult(String temperature) {
+		if(temperature.equals("Fahrenheit")) return (this.getTemperatureLevel() * factor) + 32; 
+		else if(temperature.equals("Kelvin")) return this.getTemperatureLevel() + 273.15;
+		else if(temperature.equals("Reaumur")) return this.getTemperatureLevel() * (factor - 1);
 		return this.getTemperatureLevel();
 	}
-
-	@Override
-	double getResult(Fahrenheit temperature) {
-		double cel_to_fah = this.getTemperatureLevel();
-		cel_to_fah = (cel_to_fah * factor) + 32;
-		temperature.setTemperatureLevel(cel_to_fah);
-		return temperature.getTemperatureLevel();
-	}
-
-	@Override
-	double getResult(Kelvin temperature) {
-		temperature.setTemperatureLevel(this.getTemperatureLevel() + 273.15);
-		return temperature.getTemperatureLevel();
-	}
-
-	@Override
-	double getResult(Reaumur temperature) {
-		double cel_to_rea = this.getTemperatureLevel() * (factor - 1);
-		temperature.setTemperatureLevel(cel_to_rea);
-		return temperature.getTemperatureLevel();
-	}
-
 }

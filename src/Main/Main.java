@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.text.NumberFormat;
+import java.util.ArrayList;
 
 public class Main {
 	public static JFrame mainFrame;
@@ -18,10 +19,6 @@ public class Main {
 	private double text_1;
 	private String text_2;
 	private NumberFormat doubleFormat;
-	private Celcius celcius;
-	private Fahrenheit fahrenheit;
-	private Kelvin kelvin;
-	private Reaumur reamumur;
 	private Length fromLen, toLen;
 	private ImageIcon img = new ImageIcon("C:/Users/LEGION/OneDrive/Pictures/Anime/Emojis/ConcernedAwoo.png");
 
@@ -63,7 +60,7 @@ public class Main {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					JDialog tempDialog = new JDialog(mainFrame, "Length Converter");
+					JDialog tempDialog = new JDialog(mainFrame, "Temperature Converter");
 					JPanel tempPanel = createTempPanel();
 
 					tempDialog.add(tempPanel);
@@ -72,7 +69,7 @@ public class Main {
 					tempDialog.setLocationRelativeTo(null);
 				} catch (Exception e1) {
 					e1.printStackTrace();
-					JOptionPane.showMessageDialog(mainFrame, "Length Frame Creation Error!");
+					JOptionPane.showMessageDialog(mainFrame, "Temperature Frame Creation Error!");
 				}
 			}
 		});
@@ -136,7 +133,6 @@ public class Main {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				boolean minus = false;
 				try {
 
 					option_1 = comboBox_1.getSelectedItem().toString();
@@ -154,11 +150,32 @@ public class Main {
 					textField_2.setValue(text_1);
 				else {
 					try {
-						String temp = Double.toString(text_1);
-						if(temp.contains("-")) {
-							minus = true;
+						double result = 0;
+						switch (option_1) {
+							case "Celcius":
+								Celcius celcius_1;
+								celcius_1 = new Celcius(text_1);
+								result = ((Celcius)celcius_1).getResult(option_2);
+								break;
+							case "Fahrenheit":
+								Fahrenheit fahrenheit_1;
+								fahrenheit_1 = new Fahrenheit(text_1);
+								result = ((Fahrenheit)fahrenheit_1).getResult(option_2);
+								break;
+							case "Kelvin":
+								Kelvin kelvin_1;
+								kelvin_1 = new Kelvin(text_1);
+								result = ((Kelvin)kelvin_1).getResult(option_2);
+								break;
+							case "Reaumur":
+								Reaumur reamumur_1;
+								reamumur_1 = new Reaumur(text_1);
+								result = ((Reaumur)reamumur_1).getResult(option_2);
+								break;
+							default:
+								break;
 						}
-						
+						textField_2.setValue(result);
 					} catch (Exception e1) {
 						JOptionPane.showMessageDialog(mainFrame, "Calculation Error!");
 					}
