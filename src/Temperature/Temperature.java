@@ -9,7 +9,7 @@ public abstract class Temperature {
 	}
 
 	abstract double getResult(String temperature);
-	
+
 	public double getTemperatureLevel() {
 		return temperatureLevel;
 	}
