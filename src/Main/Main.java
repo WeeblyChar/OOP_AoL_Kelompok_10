@@ -101,7 +101,7 @@ public class Main {
 		JComboBox comboBox_1, comboBox_2;
 		JFormattedTextField textField_1, textField_2;
 
-		String[] tempList = { "Celcius", "Fahrenheit", "Kelvin", "Reaumur" };
+		String[] tempList = { "Celcius", "Fahrenheit", "Kelvin", "Reaumur", "Rankine"};
 		
 		comboBox_1 = new JComboBox(tempList);
 		comboBox_2 = new JComboBox(tempList);
