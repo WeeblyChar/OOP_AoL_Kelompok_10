@@ -170,6 +170,11 @@ public class Main {
 								reamumur_1 = new Reaumur(text_1);
 								result = ((Reaumur)reamumur_1).getResult(option_2);
 								break;
+							case "Rankine":
+								Rankine rankine_1;
+								rankine_1 = new Rankine(text_1);
+								result = ((Rankine)rankine_1).getResult(option_2);
+								break;
 							default:
 								break;
 						}

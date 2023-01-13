@@ -13,6 +13,7 @@ public class Kelvin extends Temperature {
 		if (temperature.equals("Celcius")) return this.getTemperatureLevel() - 273.15;
 		else if (temperature.equals("Fahrenheit")) return (this.getTemperatureLevel() * factor) - 459.67;
 		else if (temperature.equals("Reaumur")) return (this.getTemperatureLevel() - 273.15) * (factor - 1);
+		else if(temperature.equals("Rankine")) return this.getTemperatureLevel() * factor;
 		return this.getTemperatureLevel();
 	}
 }

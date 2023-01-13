@@ -13,6 +13,7 @@ public class Reaumur extends Temperature {
 		if (temperature.equals("Celcius")) return this.getTemperatureLevel() * factor;
 		else if (temperature.equals("Fahrenheit")) return (this.getTemperatureLevel() * (factor + 1)) + 32;
 		else if (temperature.equals("Kelvin")) return (this.getTemperatureLevel() * factor) + 273.15;
+		else if(temperature.equals("Rankine")) return (this.getTemperatureLevel() * (factor + 1)) + 32 + 459.67;
 		return this.getTemperatureLevel();
 	}
 }
