@@ -11,13 +11,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.text.NumberFormat;
-import java.util.ArrayList;
 
 public class Main {
 	public static JFrame mainFrame;
 	private String option_1, option_2;
 	private double text_1;
-	private String text_2;
 	private NumberFormat doubleFormat;
 	private Length fromLen, toLen;
 //	private ImageIcon img = new ImageIcon("C:/Users/LEGION/OneDrive/Pictures/Anime/Emojis/ConcernedAwoo.png");
