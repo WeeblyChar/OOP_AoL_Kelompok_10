@@ -1,5 +1,6 @@
 package Temperature;
 
+// Reaumur as the child class of Temperature as the implementation of inherintance
 public class Reaumur extends Temperature {
 
 	final private double factor = 1.25;
