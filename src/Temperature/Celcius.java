@@ -1,5 +1,6 @@
 package Temperature;
 
+// Celcius as the child class of Temperature as the implementation of inherintance
 public class Celcius extends Temperature {
 
 	final private double factor = 1.8;
