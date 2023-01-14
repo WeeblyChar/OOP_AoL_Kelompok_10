@@ -1,5 +1,6 @@
 package Temperature;
 
+// Kelvin as the child class of Temperature as the implementation of inherintance
 public class Kelvin extends Temperature {
 
 	final private double factor = 1.8;
