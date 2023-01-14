@@ -2,7 +2,7 @@ package Length;
 
 public class Length {
 
-	// To Meter
+	// Use Meter as the "centre" for the unit convertio
 	final private double INCH_TO_METER = 0.0254;
 	final private double FOOT_TO_METER = 0.3048;
 	final private double MILE_TO_METER = 1609.344;
