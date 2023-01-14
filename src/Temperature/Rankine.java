@@ -1,5 +1,6 @@
 package Temperature;
 
+// Rankine as the child class of Temperature as the implementation of inherintance
 public class Rankine extends Temperature {
 	
 	final private double factor = 1.8;
