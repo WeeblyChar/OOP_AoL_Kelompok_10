@@ -1,5 +1,6 @@
 package Temperature;
 
+// Fahrenheit as the child class of Temperature as the implementation of inherintance
 public class Fahrenheit extends Temperature {
 
 	final private double factor = 1.8;
