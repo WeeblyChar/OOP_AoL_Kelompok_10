@@ -40,6 +40,7 @@ public class Main {
 
 					lengthDialog.add(lengthPanel);
 					lengthDialog.setSize(400, 150);
+					lengthDialog.setResizable(false);
 					lengthDialog.setVisible(true);
 					lengthDialog.setLocationRelativeTo(null);
 				} catch (Exception e1) {
@@ -63,6 +64,7 @@ public class Main {
 
 					tempDialog.add(tempPanel);
 					tempDialog.setSize(400, 150);
+					tempDialog.setResizable(false);
 					tempDialog.setVisible(true);
 					tempDialog.setLocationRelativeTo(null);
 				} catch (Exception e1) {
@@ -203,7 +205,7 @@ public class Main {
 		tempPanel.add(wrapper_1);
 		tempPanel.add(wrapper_2);
 		tempPanel.add(wrapper_3);
-
+		
 		return tempPanel;
 	}
 
