@@ -29,4 +29,4 @@ Seluruh satuan ukur yang tertera di atas dapat di ubah menjadi satuan lainnya ya
 5.	Hasil value yang sudah di ubah akan muncul pada textbox yang tersedia.
 
 #### Additional Info 🔍
-Penjelasan lebih mendalam mengenai pembuatan kode dalam aplikasi Eclipse IDE dapat diakses melalui [Manual Guide]() 
+Penjelasan lebih mendalam mengenai pembuatan kode dalam aplikasi Eclipse IDE dapat diakses melalui [Manual Guide](https://drive.google.com/file/d/1jU9HVUbsDgMVT6wKRr0Eo6bV8apmaeST/view?usp=share_link) 
