@@ -18,13 +18,11 @@ public class Main {
 	private double text_1;
 	private NumberFormat doubleFormat;
 	private Length fromLen, toLen;
-//	private ImageIcon img = new ImageIcon("C:/Users/LEGION/OneDrive/Pictures/Anime/Emojis/ConcernedAwoo.png");
 
 	Main create() {
 		initializeFormattedNumbers();
 		
 		mainFrame = new JFrame("Measurement Converter");
-//		mainFrame.setIconImage(img.getImage());
 
 		JLabel lengthLabel = new JLabel("Length Measurement Converter");
 		JButton buttonLength = new JButton("X");
