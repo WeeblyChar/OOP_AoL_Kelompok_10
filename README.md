@@ -5,8 +5,8 @@ Anggota Kelompok:
 - Lovina Anabelle Citra         | 2540121322
 - Matthew Avel Wilem            | 2201826632
 
-## UNIT CONVERTER 🌡️ 📏
-**Unit Converter** merupakan aplikasi yang dibuat menggunakan bahasa pemrograman *Java*. Aplikasi ini memiliki fungsi untuk membantu user dalam mengubah satuan ukur suhu dan panjang dengan satuan lainnya.
+## MEASUREMENT CONVERTER 🌡️ 📏
+**Measurement Converter** merupakan aplikasi yang dibuat menggunakan bahasa pemrograman *Java*. Aplikasi ini memiliki fungsi untuk membantu user dalam mengubah satuan ukur suhu dan panjang dengan satuan lainnya.
 
 ### Tujuan pembuatan aplikasi
 1. Membantu masyarakat dalam menghitung cepat sesuai dengan kebutuhan, terutama untuk angka yang besar dan berbentuk decimal
