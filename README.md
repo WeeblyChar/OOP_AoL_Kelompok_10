@@ -21,7 +21,7 @@ Dalam aplikasi ini terdapat 2 menu pilihan jenis satuan ukur, yaitu menu suhu da
 
 Seluruh satuan ukur yang tertera di atas dapat di ubah menjadi satuan lainnya yang berada dalam menu satuan ukur yang sama (suhu/panjang).
 
-### Langkah - langkah Menggunakan Aplikasi
+### Langkah - langkah menggunakan aplikasi
 1.	Pilih menu ‘Length Measurement Converter’ atau ‘Temperature Measurement Converter’ dengan menekan tombol [  X	] di sampingnya
 2.	Pilih satuan ukur awal dari pilihan yang ada dan masukan panjang/suhu yang dimiliki (dalam bentuk angka).  
 3.	Pilih satuan ukur akhir yang diinginkan.
