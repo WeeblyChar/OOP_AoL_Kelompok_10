@@ -28,3 +28,5 @@ Seluruh satuan ukur yang tertera di atas dapat di ubah menjadi satuan lainnya ya
 4.	Tekan tombol **Calculate**.
 5.	Hasil value yang sudah di ubah akan muncul pada textbox yang tersedia.
 
+#### Additional Info 🔍
+Untuk penjelasan lebih mengenai penggunaan kode dan aplikasi dapat diakses melalui [Manual Guide]() 
