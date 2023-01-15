@@ -8,15 +8,23 @@ Anggota Kelompok:
 ## UNIT CONVERTER 🌡️ 📏
 **Unit Converter** merupakan aplikasi yang dibuat menggunakan bahasa pemrograman *Java*. Aplikasi ini memiliki fungsi untuk membantu user dalam mengubah satuan ukur suhu dan panjang dengan satuan lainnya.
 
-Daftar satuan ukur yang terdapat pada aplikasi ini adalah:
+### Tujuan pembuatan aplikasi
+1. Membantu masyarakat dalam menghitung cepat sesuai dengan kebutuhan, terutama untuk angka yang besar dan berbentuk decimal
+2. Membantu pembelajaran sebagai bentuk pembuktian apakah hitungan manual jawabannya sama dengan hitungan secara "komputer".
 
-* Panjang = Inch, Foot, Mile, Yard, Milimeter, Centimeter, Meter, dan Kilometer
+### Fitur aplikasi
+Dalam aplikasi ini terdapat 2 menu pilihan jenis satuan ukur, yaitu menu suhu dan panjang. Satuan ukur yang terdapat dalam aplikasi ini berupa :
+            
+- Suhu          : Celcius, Fahrenheit, Kelvin, Reaumur, dan Rankine.
+            
+- Panjang    : Inch, Foot, Mile, Yard, Milimeter, Centimeter, Meter, dan Kilometer.
 
-* Suhu = Celcius, Fahrenheit, Kelvin, Reaumur, dan Rankine
+Seluruh satuan ukur yang tertera di atas dapat di ubah menjadi satuan lainnya yang berada dalam menu satuan ukur yang sama (suhu/panjang).
 
-Langkah-langkah penggunaan aplikasi :
-1. Pilih satuan awal yang ingin diubah.
-2. Masukan value panjang/suhu yang dimiliki (dalam bentuk angka).
-3. Pilih satuan akhir.
-4. Tekan tombol **Calculate**.
-5. Hasil value yang sudah di ubah akan muncul pada textbox yang tersedia.
+###Langkah - langkah Menggunakan Aplikasi
+1.	Pilih menu ‘Length Measurement Converter’ atau ‘Temperature Measurement Converter’ dengan menekan tombol [  X	] di sampingnya
+2.	Pilih satuan ukur awal dari pilihan yang ada dan masukan panjang/suhu yang dimiliki (dalam bentuk angka).  
+3.	Pilih satuan ukur akhir yang diinginkan.
+4.	Tekan tombol **Calculate**.
+5.	Hasil value yang sudah di ubah akan muncul pada textbox yang tersedia.
+
