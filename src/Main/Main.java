@@ -42,7 +42,7 @@ public class Main {
 					lengthDialog.setVisible(true);
 					lengthDialog.setLocationRelativeTo(null);
 				} catch (Exception e1) {
-					e1.printStackTrace();
+					e1.printStackTrace(); 
 					JOptionPane.showMessageDialog(mainFrame, "Length Frame Creation Error!");
 				}
 			}
